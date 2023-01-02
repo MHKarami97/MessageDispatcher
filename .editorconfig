@@ -1,0 +1,275 @@
+[*.cs]
+
+# Default severity for analyzer diagnostics with category 'Style' (escalated to build warnings)
+dotnet_analyzer_diagnostic.category-Style.severity = warning
+
+# MA0026 : Complete the task
+dotnet_diagnostic.MA0026.severity = suggestion
+
+# CA1308: In method 'urlToLower', replace the call to 'ToLowerInvariant' with 'ToUpperInvariant' (CA1308)
+dotnet_diagnostic.CA1308.severity = suggestion
+
+# CA1040: Avoid empty interfaces
+dotnet_diagnostic.CA1040.severity = suggestion
+
+# CA1829 Use the "Count" property instead of Enumerable.Count()
+dotnet_diagnostic.CA1829.severity = suggestion
+
+# Use 'Count' property here instead.
+dotnet_diagnostic.S2971.severity = suggestion
+
+# S1135 : Complete the task
+dotnet_diagnostic.S1135.severity = suggestion
+
+# S2479: Replace the control character at position 7 by its escape sequence
+dotnet_diagnostic.S2479.severity = suggestion
+
+# CA2007: Consider calling ConfigureAwait on the awaited task
+dotnet_diagnostic.CA2007.severity = none
+
+# MA0004: Use Task.ConfigureAwait(false) as the current SynchronizationContext is not needed
+dotnet_diagnostic.MA0004.severity = none
+
+# CA1056: Change the type of property 'Url' from 'string' to 'System.Uri'
+dotnet_diagnostic.CA1056.severity = suggestion
+
+# CA1054: Change the type of parameter of the method to allow a Uri to be passed as a 'System.Uri' object
+dotnet_diagnostic.CA1054.severity = suggestion
+
+# CA1055: Change the return type of method from 'string' to 'System.Uri'
+dotnet_diagnostic.CA1055.severity = suggestion
+
+# S4457: Split this method into two, one handling parameters check and the other handling the asynchronous code.
+dotnet_diagnostic.S4457.severity = none
+
+# AsyncFixer01: Unnecessary async/await usage
+dotnet_diagnostic.AsyncFixer01.severity = suggestion
+
+# AsyncFixer02: Long-running or blocking operations inside an async method
+dotnet_diagnostic.AsyncFixer02.severity = suggestion
+
+# VSTHRD103: Call async methods when in an async method
+dotnet_diagnostic.VSTHRD103.severity = suggestion
+
+# AsyncFixer03: Fire & forget async void methods
+dotnet_diagnostic.AsyncFixer03.severity = suggestion
+
+# VSTHRD100: Avoid async void methods
+dotnet_diagnostic.VSTHRD100.severity = suggestion
+
+# VSTHRD101: Avoid unsupported async delegates
+dotnet_diagnostic.VSTHRD101.severity = suggestion
+
+# VSTHRD107: Await Task within using expression
+dotnet_diagnostic.VSTHRD107.severity = suggestion
+
+# AsyncFixer04: Fire & forget async call inside a using block
+dotnet_diagnostic.AsyncFixer04.severity = suggestion
+
+# VSTHRD110: Observe result of async calls
+dotnet_diagnostic.VSTHRD110.severity = suggestion
+
+# VSTHRD002: Avoid problematic synchronous waits
+dotnet_diagnostic.VSTHRD002.severity = suggestion
+
+# MA0045: Do not use blocking call (make method async)
+dotnet_diagnostic.MA0045.severity = suggestion
+
+# AsyncifyInvocation: Use Task Async
+dotnet_diagnostic.AsyncifyInvocation.severity = suggestion
+
+# AsyncifyVariable: Use Task Async
+dotnet_diagnostic.AsyncifyVariable.severity = suggestion
+
+# VSTHRD111: Use ConfigureAwait(bool)
+dotnet_diagnostic.VSTHRD111.severity = none
+
+# MA0022: Return Task.FromResult instead of returning null
+dotnet_diagnostic.MA0022.severity = suggestion
+
+# VSTHRD114: Avoid returning a null Task
+dotnet_diagnostic.VSTHRD114.severity = suggestion
+
+# VSTHRD200: Use "Async" suffix for async methods
+dotnet_diagnostic.VSTHRD200.severity = suggestion
+
+# MA0040: Specify a cancellation token
+dotnet_diagnostic.MA0032.severity = suggestion
+
+# MA0040: Flow the cancellation token when available
+dotnet_diagnostic.MA0040.severity = suggestion
+
+# MA0079: Use a cancellation token using .WithCancellation()
+dotnet_diagnostic.MA0079.severity = suggestion
+
+# MA0080: Use a cancellation token using .WithCancellation()
+dotnet_diagnostic.MA0080.severity = suggestion
+
+#AsyncFixer05: Downcasting from a nested task to an outer task.
+dotnet_diagnostic.AsyncFixer05.severity = suggestion
+
+# ClrHeapAllocationAnalyzer
+# HAA0301: Closure Allocation Source
+dotnet_diagnostic.HAA0301.severity = suggestion
+
+# HAA0601: Value type to reference type conversion causing boxing allocation
+dotnet_diagnostic.HAA0601.severity = suggestion
+
+# HAA0302: Display class allocation to capture closure
+dotnet_diagnostic.HAA0302.severity = suggestion
+
+# HAA0101: Array allocation for params parameter
+dotnet_diagnostic.HAA0101.severity = suggestion
+
+# HAA0603: Delegate allocation from a method group
+dotnet_diagnostic.HAA0603.severity = suggestion
+
+# HAA0602: Delegate on struct instance caused a boxing allocation
+dotnet_diagnostic.HAA0602.severity = suggestion
+
+# HAA0401: Possible allocation of reference type enumerator
+dotnet_diagnostic.HAA0401.severity = silent
+
+# HAA0303: Lambda or anonymous method in a generic method allocates a delegate instance
+dotnet_diagnostic.HAA0303.severity = silent
+
+# HAA0102: Non-overridden virtual method call on value type
+dotnet_diagnostic.HAA0102.severity = silent
+
+# HAA0502: Explicit new reference type allocation
+dotnet_diagnostic.HAA0502.severity = none
+
+# HAA0505: Initializer reference type allocation
+dotnet_diagnostic.HAA0505.severity = silent
+
+# MA0009: Regular expressions
+dotnet_diagnostic.MA0009.severity = suggestion
+
+# S1118: Protected constructor
+dotnet_diagnostic.S1118.severity = suggestion
+
+# CA1052: Static holder
+dotnet_diagnostic.CA1052.severity = suggestion
+
+# CA1008: Add a member to SubscriptionStartType that has a value of zero with a suggested name of 'None'
+dotnet_diagnostic.CA1008.severity = suggestion
+
+# S4035: Seal class 'PasswordComplexitySetting' or implement 'IEqualityComparer<T>' instead
+dotnet_diagnostic.S4035.severity = suggestion
+
+# S3897: Implement 'IEquatable<PasswordComplexitySetting>'
+dotnet_diagnostic.S3897.severity = suggestion
+
+# MA0077: A class that provides Equals(T) should implement IEquatable<T>
+dotnet_diagnostic.MA0077.severity = suggestion
+
+# CA1034: Do not nest type Host. Alternatively, change its accessibility so that it is not externally visible.
+dotnet_diagnostic.CA1034.severity = suggestion
+
+# MA0048: File name must match type name
+dotnet_diagnostic.MA0048.severity = suggestion
+
+# CA1014: Mark assemblies with CLSCompliant
+dotnet_diagnostic.CA1014.severity = suggestion
+
+# CS0162: Unrichebele code
+dotnet_diagnostic.CS0162.severity = suggestion
+
+# MA0049: Type name should not match containing namespace
+dotnet_diagnostic.MA0049.severity = suggestion
+
+dotnet_diagnostic.IDE0160.severity = none
+
+dotnet_diagnostic.IDE0008.severity = none
+
+dotnet_diagnostic.MA0047.severity = none
+
+dotnet_diagnostic.CA1848.severity = none
+
+dotnet_diagnostic.CA1727.severity = none
+
+csharp_indent_labels = one_less_than_current
+csharp_space_around_binary_operators = before_and_after
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_prefer_braces = true:silent
+csharp_style_namespace_declarations = block_scoped:silent
+csharp_style_prefer_method_group_conversion = true:silent
+csharp_style_prefer_top_level_statements = true:silent
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_accessors = true:silent
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_throw_expression = true:suggestion
+csharp_style_prefer_null_check_over_type_check = true:suggestion
+
+[*.{cs,vb}]
+#### Naming styles ####
+
+# Naming rules
+
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+# Symbol specifications
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers = 
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types.required_modifiers = 
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.required_modifiers = 
+
+# Naming styles
+
+dotnet_naming_style.begins_with_i.required_prefix = I
+dotnet_naming_style.begins_with_i.required_suffix = 
+dotnet_naming_style.begins_with_i.word_separator = 
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
+indent_size = 4
+end_of_line = crlf
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+dotnet_style_namespace_match_folder = true:suggestion
